@@ -57,6 +57,11 @@ Point3D& Point3D::Min(int x, int y, int z)
 
 Point3D& Point3D::Div(int x, int y, int z)
 {
+	if (x == 0 || y == 0 || z == 0)
+	{
+		cout << "Don't divide by 0" << endl;
+		return *this;
+	}
 	this->x /= x;
 	this->y /= y;
 	this->z /= z;
