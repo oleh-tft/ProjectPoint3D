@@ -7,7 +7,8 @@ int main()
 	cout << "Point count: " << Point3D::GetCount() << endl;
 
 	Point3D a(2, 2, 21);
-	Point3D b(1, 3, 5);
+	Point3D b;
+	b.Init(1, 1, 43);
 	a.Mult(0, 10, 15);
 	a.Output();
 
